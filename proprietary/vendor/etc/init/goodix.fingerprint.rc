@@ -1,5 +1,5 @@
 on init
-    chown system system /dev/goodix_fp
+    chown system system  /dev/goodix_fp
     chmod 0644 /dev/goodix_fp
 
 on post-fs-data
@@ -9,22 +9,9 @@ on post-fs-data
 
 service gx_fpd /vendor/bin/gx_fpd
     class late_start
+#    seclabel u:r:gx_fpd:s0
     user system
     group system
-    disabled
-
-# The AIDL wrapper opens the legacy HAL during startup. Keep it stopped until
-# gx_fpd has initialized the Goodix/QSEE stack and published its ready property.
-service vendor.fingerprint-default /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.lineage
-    override
-    class late_start
-    user system
-    group system input uhid
-    shutdown critical
-    disabled
-
-on property:sys.boot_completed=1
-    start gx_fpd
-
-on property:goodix.fp.service.ready=1
-    start vendor.fingerprint-default
+#	disable
+#on property:persist.sys.fptype=1
+#	start gx_fpd

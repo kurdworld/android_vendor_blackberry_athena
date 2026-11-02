@@ -5,7 +5,7 @@
 soong_namespace {
     imports: [
         "device/blackberry/sdm660-common",
-        "hardware/qcom-caf/msm8998",
+        "hardware/qcom-caf/sdm660",
         "hardware/qcom-caf/wlan",
         "vendor/blackberry/sdm660-common",
     ],
@@ -14,6 +14,7 @@ soong_namespace {
 cc_prebuilt_library_shared {
     name: "libFlacSwDec",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -51,6 +52,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libacdb-fts",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -94,6 +96,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libacdbloader",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -145,6 +148,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libacdbrtac",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -188,6 +192,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadiertac",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -231,6 +236,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadsp_default_listener",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -270,6 +276,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadsprpc",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -319,6 +326,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libaudcal",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -360,6 +368,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libaudioalsa",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -395,6 +404,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libaudioparsers",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -434,6 +444,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcdsp_default_listener",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -473,6 +484,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libcdsprpc",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -546,6 +558,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libfastcvadsp_stub",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -585,6 +598,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libfastcvopt",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -626,6 +640,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmdsprpc",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -915,6 +930,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libqtigef",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1194,6 +1210,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libsdsprpc",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1243,6 +1260,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libsysmon_cdsp_skel",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1280,6 +1298,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libtinycompress_vendor",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1343,6 +1362,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libwebrtc_audio_preprocessing",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1384,6 +1404,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libasphere",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1424,6 +1445,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libaudiopreprocessing",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1468,6 +1490,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libbundlewrapper",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1508,6 +1531,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libdownmix",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1548,6 +1572,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libeffectproxy",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1592,6 +1617,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libldnhncr",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1632,6 +1658,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libqcbassboost",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1669,9 +1696,13 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
+
+
 cc_prebuilt_library_shared {
     name: "libqcvirt",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1712,6 +1743,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libreverbwrapper",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1752,6 +1784,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvisualizer",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -1789,9 +1822,11 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+
 cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.dsp@1.0",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -2311,6 +2346,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadm",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -2338,6 +2374,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadsp_hvx_callback_skel",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -2367,6 +2404,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libadsp_hvx_stub",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -31959,6 +31997,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libdrc",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -35574,21 +35613,14 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libmmjpeg_interface",
     owner: "blackberry",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmmjpeg_interface.so",
-            ],
-        },
-    },
+    strip: { none: true, },
+    target: { android_arm: { srcs: ["proprietary/vendor/lib/libmmjpeg_interface.so"], }, },
     compile_multilib: "32",
     check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
+// to fix JPEG output port dimensions for BLOB buffers
 
 cc_prebuilt_library_shared {
     name: "libmmlib2d_interface",
@@ -35821,6 +35853,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libsurround_3mic_proc",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -35864,6 +35897,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libqcreverb",
     owner: "blackberry",
+    check_elf_files: false,
     strip: {
         none: true,
     },
@@ -35946,7 +35980,6 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libcutils",
                 "libutils",
-                "libstdc++_vendor",
                 "libm",
                 "libc",
                 "libdl",
@@ -35954,6 +35987,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -36182,6 +36216,7 @@ prebuilt_rfsa {
 cc_prebuilt_binary {
     name: "adsprpcd",
     owner: "blackberry",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -36207,6 +36242,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "audioflacapp",
     owner: "blackberry",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -36233,6 +36269,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "cdsprpcd",
     owner: "blackberry",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
@@ -36258,6 +36295,7 @@ cc_prebuilt_binary {
 cc_prebuilt_binary {
     name: "dspservice",
     owner: "blackberry",
+    check_elf_files: false,
     target: {
         android_arm64: {
             srcs: [
